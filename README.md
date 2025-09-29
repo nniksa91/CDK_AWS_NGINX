@@ -16,14 +16,14 @@ npm i
 npm run build
 # Use an existing VPC (default) or create one
 cdk deploy NetworkDiscoveryStack -c useDefaultVpc=true
-cdk deploy EcsNginxWithCfStack -c cognitoDomainPrefix="cognitoDomainPrefix"
+cdk deploy EcsNginxWithCfStack -c cognitoDomainPrefix="alb-auth-nniksa9345" --require-approval never
 ```
 
 
 To lookup by name instead:
 ```bash
 cdk deploy NetworkDiscoveryStack -c vpcName=my-vpc
-cdk deploy EcsNginxWithCfStack -c cognitoDomainPrefix="cognitoDomainPrefix"
+cdk deploy EcsNginxWithCfStack -c cognitoDomainPrefix="alb-auth-nniksa9345" --require-approval never
 ```
 
 
